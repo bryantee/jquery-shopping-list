@@ -51,6 +51,10 @@ button {
 
 }
 
+button:hover {
+	background-color: gold;
+}
+
 .listbox {
 	display: inline-block;
 	margin: 2em;
