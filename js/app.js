@@ -13,6 +13,9 @@ $(document).ready(function() {
 			console.log('Adding ' + item);
 			$('.toBuy ul').append('<li class="itembuy">' + item + '</li>');
 			$('.error').hide();
+
+			//clear the input box
+			$('.addItems').val('');
 		};
 	});
 
@@ -43,4 +46,6 @@ $(document).ready(function() {
 		$('.itemlist > li').remove();
 		$('.cartlist > li').remove();
 	});
+
+
 });
