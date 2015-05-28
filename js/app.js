@@ -36,4 +36,11 @@ $(document).ready(function() {
 		$('.cart ul').append('<li class="incart">' + itemToCart + '</li>');
 	});
 
+	// clear list when "clear list" button clicked
+
+	$('.clearButton').on('click', function() {
+		console.log('Clear list clicked');
+		$('.itemlist > li').remove();
+		$('.cartlist > li').remove();
+	});
 });
