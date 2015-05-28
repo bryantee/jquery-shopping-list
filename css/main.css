@@ -92,3 +92,10 @@ button:hover {
 .selected {
 	color: #FFEB3B;
 }
+
+.delete {
+	float: right;
+	color: red;
+	font-weight: 600;
+	display: none;
+}
