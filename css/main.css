@@ -58,6 +58,7 @@ button {
 	border-radius: 5px;
 	background-color: #689F38;
 	color: white;
+	overflow: hidden;
 }
 
 .toBuy,
@@ -84,3 +85,6 @@ button {
 	border-radius: 25px;
 }
 
+.selected {
+	color: #FFEB3B;
+}
