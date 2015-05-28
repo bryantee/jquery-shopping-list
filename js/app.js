@@ -4,10 +4,18 @@ $(document).ready(function() {
 	// add items to list
 
 	$('.addButton').on('click', function() {
-		var item = $('.addItems').val();
-		console.log('Adding ' + item);
-		$('.toBuy ul').append('<li class="itembuy">' + item + '</li>');
+
+		// check to see if anything entered in text field
+		if($('.addItems').val() === '') {
+			$('.error').show();
+		} else { 
+			var item = $('.addItems').val();
+			console.log('Adding ' + item);
+			$('.toBuy ul').append('<li class="itembuy">' + item + '</li>');
+			$('.error').hide();
+		};
 	});
+
 
 	// hover: highlight to add to cart
 
