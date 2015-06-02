@@ -6,15 +6,18 @@ $(document).ready(function() {
 	$('.addButton').on('click', function() {
 
 		// check to see if anything entered in text field
+		// if not, show error
 		if($('.addItems').val() === '') {
 			$('.error').show();
 		} else { 
+			
+			// else add item to list to buy
 			var item = $('.addItems').val();
 			console.log('Adding ' + item);
 			$('.toBuy ul').append('<li class="itembuy">' + item + '</li>');
 			$('.error').hide();
 
-			//clear the input box
+			//clear the input box after adding
 			$('.addItems').val('');
 		};
 	});
