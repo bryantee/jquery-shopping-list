@@ -51,6 +51,10 @@ button {
 
 }
 
+button:hover {
+	background-color: gold;
+}
+
 .listbox {
 	display: inline-block;
 	margin: 2em;
@@ -58,6 +62,7 @@ button {
 	border-radius: 5px;
 	background-color: #689F38;
 	color: white;
+	overflow: hidden;
 }
 
 .toBuy,
@@ -84,3 +89,13 @@ button {
 	border-radius: 25px;
 }
 
+.selected {
+	color: #FFEB3B;
+}
+
+.delete {
+	float: right;
+	color: red;
+	font-weight: 600;
+	display: none;
+}

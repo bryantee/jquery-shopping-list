@@ -3,7 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shop Till You Drop</title>
-	<link href="css/main.css" type="text/stylesheet" rel="stylesheet">
+	<link href="css/main.css" type="text/css" rel="stylesheet">
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/app.js"></script>
+	
 </head>
 <body>
 	<header class="content">
@@ -19,16 +22,20 @@
 		<div class="listbox">
 			<h3>To Buy</h3>
 			<div class="toBuy">	
-				<p class="empty">Nothing in the cart.</p>
-				<p class="itembuy">Pizza</p>
-				<p class="itembuy">Tangerines</p>
+				<ul class="itemlist">
+					<li class="empty">Nothing in the cart.</li>
+					<li  class="itembuy">Pizza</li>
+					<li  class="itembuy">Tangerines</li>
+				</ul>
 			</div>
 		</div>
 		<div class="listbox">
 			<h3>In The Cart</h3>
 			<div class="cart">
-				<p class="incart">Butter</p>
-				<p class="incart">Raisins</p>
+				<ul class="cartlist">
+					<li class="incart">Butter</li>
+					<li class="incart">Raisins</li>
+				</ul>
 			</div>
 		</div>
 	</section>
